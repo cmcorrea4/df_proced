@@ -6,7 +6,7 @@ def main():
     st.title("Análisis de Datos de Energía")
 
     # Carga del archivo de Excel
-    df = pd.read_excel('referencia.xlsx')
+    df = pd.read_excel('referencia .xlsx')
     
 
     if archivo_excel is not None:
