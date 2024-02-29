@@ -7,6 +7,7 @@ def main():
 
     # Carga del archivo de Excel
     df = pd.read_excel('referencia.xlsx')
+    
 
     if archivo_excel is not None:
         # Lectura del archivo Excel
