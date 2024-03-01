@@ -7,5 +7,5 @@ if uploaded_file is not None:
     # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
     st.write(bytes_data)
-    dataframe = pd.read_csv(uploaded_file)
+    dataframe = pd.read_excel(uploaded_file)
     st.write(dataframe)    
