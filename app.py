@@ -6,7 +6,7 @@ uploaded_file = st.file_uploader('Choose a file')
 if uploaded_file is not None:
    df1=pd.read_csv(uploaded_file)
    st.write(df1)
-   Asegúrate de que la columna de fechas es de tipo datetime
+   #Asegúrate de que la columna de fechas es de tipo datetime
    df['fecha'] = pd.to_datetime(df['fecha Inicio'])
 
    # Define tu rango de tiempo
