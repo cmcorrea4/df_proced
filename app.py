@@ -16,9 +16,9 @@ if uploaded_file is not None:
    st.write(fin)
 
    # Filtra el DataFrame
-   df_filtrado = df[df['Fecha Inicio'].between(inicio, fin)]
+   df1_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
 
    # Muestra el DataFrame filtrado
-   print(df_filtrado)
+   print(df1_filtrado)
 else:
  st.warning('you need to upload a csv or excel file.')
