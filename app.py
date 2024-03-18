@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import pytz
 
 st.title('Análisis de datos de Producción')
 uploaded_file = st.file_uploader('Choose a file')
@@ -22,3 +23,22 @@ if uploaded_file is not None:
    st.write(df1_filtrado)
 else:
  st.warning('you need to upload a csv or excel file.')
+
+now=datetime.now()
+    #with st.sidebar:
+    #   opcion_c = st.selectbox('Como quieres hacer la consulta?',('Calendario','Tiempo atrás'))
+with st.sidebar:
+       st.subheader("Parámetros de consulta")
+       sd = st.date_input("Fecha de inicio de Consulta" , max_value=datetime.today())
+       sd=sd-timedelta(hours=0)
+
+with st.sidebar:
+
+       th_start = st.time_input('Hora inicio de Consulta', datetime.now(pytz.timezone('America/Bogota')),10,step=3600)
+
+
+       ed = st.date_input( "Fecha de Fin de Consulta" , max_value=date.today())
+       ed=ed-timedelta(hours=0)
+
+with st.sidebar:
+       th_end = st.time_input('Hora fin de Consulta', datetime.now(pytz.timezone('America/Bogota')),step=3600)
