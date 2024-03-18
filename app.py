@@ -40,7 +40,7 @@ with st.sidebar:
        th_start = st.time_input('Hora inicio de Consulta', datetime.now(pytz.timezone('America/Bogota')),10,step=3600)
 
 
-       ed = st.date_input( "Fecha de Fin de Consulta" , max_value=date.today())
+       ed = st.date_input( "Fecha de Fin de Consulta" , max_value=datetime.today())
        ed=ed-timedelta(hours=0)
 
 with st.sidebar:
