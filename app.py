@@ -25,7 +25,7 @@ if uploaded_file is not None:
 else:
  st.warning('you need to upload a csv or excel file.')
 
-now=datetime.now()
+now=dt.now()
     #with st.sidebar:
     #   opcion_c = st.selectbox('Como quieres hacer la consulta?',('Calendario','Tiempo atrás'))
 with st.sidebar:
