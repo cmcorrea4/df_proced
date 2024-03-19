@@ -24,7 +24,7 @@ if uploaded_file is not None:
    #df1_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
 
    # Muestra el DataFrame filtrado
-   st.write(df1_filtrado)
+   #st.write(df1_filtrado)
 
 else:
  st.warning('you need to upload a csv or excel file.')
@@ -54,3 +54,4 @@ if st.button('Consulta '):
    st.write(ic)
    st.write(fc)
    df1_filtrado = df1[df1['Fecha Inicio'].between(ic, fc)]
+   st.write(df1_filtrado)
