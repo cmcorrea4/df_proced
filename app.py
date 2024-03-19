@@ -23,8 +23,7 @@ if uploaded_file is not None:
 
    # Muestra el DataFrame filtrado
    st.write(df1_filtrado)
-   st.write(ic)
-   st.write(fc)
+
 else:
  st.warning('you need to upload a csv or excel file.')
 
