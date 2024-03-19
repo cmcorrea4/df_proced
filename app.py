@@ -56,5 +56,6 @@ if st.button('Consulta '):
    st.write(inicio)
    st.write(fin)
    df1_filtrado = df1[df1['Fecha Inicio'].between(ic, fc)]
-   df1_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
+   df2_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
    st.write(df1_filtrado)
+   st.write(df2_filtrado)
