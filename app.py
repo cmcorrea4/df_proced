@@ -48,5 +48,6 @@ with st.sidebar:
 with st.sidebar:
        th_end = st.time_input('Hora fin de Consulta', datetime.now(pytz.timezone('America/Bogota')),step=3600)
 
-ic = str(sd)+" "+str(th_start)
-fc=  str(ed)+" "+str(th_end)
+if st.button('Consulta '):
+   ic = str(sd)+" "+str(th_start)
+   fc=  str(ed)+" "+str(th_end)
