@@ -13,7 +13,7 @@ if uploaded_file is not None:
    #Asegúrate de que la columna de fechas es de tipo datetime
    #df1['Fecha Inicio'] = pd.to_datetime(df1['Fecha Inicio'])
 
-   df1_filtrado = df1[df1['Fecha Inicio'].between(ic, fc)]
+   
 
    # Define tu rango de tiempo
    inicio = pd.to_datetime('2023-05-05')
@@ -21,7 +21,7 @@ if uploaded_file is not None:
 
 
    # Filtra el DataFrame
-   df1_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
+   #df1_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
 
    # Muestra el DataFrame filtrado
    st.write(df1_filtrado)
@@ -53,3 +53,4 @@ if st.button('Consulta '):
    fc=  str(ed)+" "+str(th_end)
    st.write(ic)
    st.write(fc)
+   df1_filtrado = df1[df1['Fecha Inicio'].between(ic, fc)]
