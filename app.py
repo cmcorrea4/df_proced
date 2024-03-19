@@ -24,6 +24,8 @@ if uploaded_file is not None:
 
    # Muestra el DataFrame filtrado
    st.write(df1_filtrado)
+   st.write(ic)
+   st.write(fc)
 else:
  st.warning('you need to upload a csv or excel file.')
 
@@ -45,3 +47,6 @@ with st.sidebar:
 
 with st.sidebar:
        th_end = st.time_input('Hora fin de Consulta', datetime.now(pytz.timezone('America/Bogota')),step=3600)
+
+ic = str(sd)+" "+str(th_start)
+fc=  str(ed)+" "+str(th_end)
