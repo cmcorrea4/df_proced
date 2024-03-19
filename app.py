@@ -53,5 +53,7 @@ if st.button('Consulta '):
    fc=  str(ed)+" "+str(th_end)
    st.write(ic)
    st.write(fc)
+   st.write(inicio)
+   st.write(fin)
    df1_filtrado = df1[df1['Fecha Inicio'].between(ic, fc)]
    st.write(df1_filtrado)
