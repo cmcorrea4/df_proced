@@ -16,8 +16,7 @@ if uploaded_file is not None:
    # Define tu rango de tiempo
    inicio = pd.to_datetime('2023-05-05')
    fin = pd.to_datetime('2023-05-29')
-   st.write(inicio)
-   st.write(fin)
+
 
    # Filtra el DataFrame
    df1_filtrado = df1[df1['Fecha Inicio'].between(inicio, fin)]
@@ -51,3 +50,5 @@ with st.sidebar:
 if st.button('Consulta '):
    ic = str(sd)+" "+str(th_start)
    fc=  str(ed)+" "+str(th_end)
+   st.write(ic)
+   st.write(fc)
